@@ -275,7 +275,7 @@ def plot_area(df: pd.DataFrame,
 
         plt.tight_layout()
         path = os.path.join("outputs", f'{png_prefix}_{suffix}.png')
-        plt.savefig(path)
+        plt.savefig(path, raise_missing=False)
         print("Plot:", path)
         plt.close()
 
